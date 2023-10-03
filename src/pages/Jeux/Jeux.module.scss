@@ -1,0 +1,63 @@
+h2 {
+  margin-top: 5%;
+}
+
+.niveauContainer {
+  margin-top: 0;
+  height: 100vh;
+
+  .title {
+    margin-top: 0;
+  }
+
+  .gameContainer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5%;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      margin-top: 12%;
+    }
+
+    .easyMode {
+      width: 30%;
+      height: 50%;
+      background-color: #271e33;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 2px;
+
+      @media (max-width: 1000px) {
+        width: 80%;
+        height: 30%;
+        // margin-top: 20px;
+      }
+    }
+
+    .hardMode {
+      width: 30%;
+      height: 50%;
+      background-color: #271e33;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 2px;
+
+      @media (max-width: 1000px) {
+        width: 80%;
+        height: 30%;
+        // margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  box-shadow: 0px 10px 5px #00000021;
+  color: #fff;
+  background-color: #271e33;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin-bottom: 40px;
+  position: fixed;
+
+  .homeContainer {
+    justify-self: start;
+
+    .homeTitle {
+      margin: 10px;
+      margin-left: 20px;
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      justify-content: start;
+      width: 100%;
+
+      .logo {
+        width: 35%;
+      }
+    }
+  }
+
+  .desktopHeader {
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: space-between;
+  }
+
+  .ProfilTitle {
+    margin: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .playTitle {
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .rankTitle {
+    margin: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+
+  .logoutTitle {
+    margin: 10px;
+    margin-right: 20px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fff;
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+
+  .signupTitle {
+    margin: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+
+  .signinTitle {
+    margin: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+}
+
+i {
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

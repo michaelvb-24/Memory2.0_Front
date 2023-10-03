@@ -1,0 +1,20 @@
+.modalContainer {
+  position: absolute;
+  background-color: #36172a;
+  width: 70%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+  .titlePseudo {
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .buttonContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    button {
+      margin-bottom: 10%;
+      background-color: #1b1523;
+    }
+  }
+}

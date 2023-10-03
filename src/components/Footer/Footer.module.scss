@@ -1,0 +1,50 @@
+.footer {
+  padding-top: 2%;
+  height: 35vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: start;
+  background-color: #271e33;
+  color: white;
+  @media (max-width: 590px) {
+    padding: 10%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: start;
+    height: auto;
+  }
+  .contactContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    @media (max-width: 590px) {
+      margin-bottom: 8%;
+    }
+    h2 {
+      margin-bottom: 10%;
+    }
+  }
+  .pageContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    @media (max-width: 590px) {
+      margin-bottom: 8%;
+    }
+    h2 {
+      margin-bottom: 10%;
+    }
+  }
+  .mentionContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    @media (max-width: 590px) {
+      margin-bottom: 8%;
+    }
+    h2 {
+      margin-bottom: 10%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.cardRomain{
+    position: relative;
+}
+.cardRomain img{
+    width: 100%;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    height: 200px;
+    @media (max-width: 502px) {
+        height: 150px;
+    }
+}
+
+/* front of the card - the picture */
+
+.cardRomain .front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+}
+
+.flipped .front{
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+/* back of the card - cover */
+
+.cardRomain .back{
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+    height: 200px;
+    @media (max-width: 502px) {
+        height: 150px;
+    }
+}
+.flipped .back{
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}

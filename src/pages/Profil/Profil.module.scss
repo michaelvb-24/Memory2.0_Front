@@ -1,0 +1,89 @@
+.profilContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 135vh;
+
+  // Premiere partie -- présentation ( pseudo & image)
+  .presentation {
+    margin-top: 3%;
+    width: 100%;
+    height: 38vh;
+    padding-top: 13vh;
+    background-color: #120e18;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+    @media (min-width: 400px) {
+      height: 50vh;
+    }
+
+    p {
+      font-size: 26px;
+      font-weight: bold;
+      @media (min-width: 400px) {
+        margin-top: 50px;
+      }
+    }
+
+    img {
+      margin-top: 5vh;
+    }
+  }
+
+  // Deuxième partie -- data update & delete container
+  .dataContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20%;
+    width: 100%;
+    height: 45vh;
+    @media (min-width: 400px) {
+      height: 40vh;
+    }
+    // .title {
+    //   margin-top: 25vh;
+    //   margin-bottom: 10%;
+    //   @media (min-width: 400px) {
+    //     margin-top: 40vh;
+    //     // margin-bottom: 2%;
+    //   }
+    // }
+    .pseudoContainer,
+    .passwordContainer {
+      width: 100%;
+      padding: 5%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: end;
+      @media (min-width: 400px) {
+        padding: 2%;
+      }
+      h3 {
+        margin-right: 5%;
+      }
+      p {
+        margin-right: 5%;
+        color: grey;
+      }
+      i {
+        font-size: 12px;
+      }
+    }
+    .buttonDelete {
+      margin-top: 20%;
+      width: 70%;
+      padding: 12px;
+      background-color: #120e18;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+      @media (min-width: 400px) {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 50%;
+      }
+    }
+  }
+}
