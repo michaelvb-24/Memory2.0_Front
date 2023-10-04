@@ -1,4 +1,5 @@
 import styles from "./Footer.module.scss";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -19,7 +20,9 @@ export default function Footer() {
       </div>
       <div className={`${styles.mentionContainer}`}>
         <h2>Mentions légales & CGU</h2>
-        <p>Mentions Légales</p>
+        <NavLink to="/MentionCgu">
+          <p>Mentions Légales</p>
+        </NavLink>
       </div>
     </div>
   );
