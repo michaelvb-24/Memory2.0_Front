@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import styles from "./signup.module.scss";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { createUser } from "../../apis/users";
 
 export function Signup() {
@@ -90,6 +90,10 @@ export function Signup() {
         {errors.generic && (
           <p className="form-error">{errors.generic.message}</p>
         )}
+        <p className={`${styles.consent}`}>
+          En vous inscrivant, vous consentez à adhérer à nos{" "}
+          <NavLink to="/MentionCgu">Condition Générales d'utilisation</NavLink>
+        </p>
         <div>
           <button disabled={isSubmitting} className={"btn btn-primary"}>
             Inscription

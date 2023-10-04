@@ -1,19 +1,14 @@
 import "./romainEasy.css";
 import { useContext, useEffect, useState } from "react";
 import SingleCard from "../../components/SingleCard/singleCard";
-import Header from "../../components/Header/Header";
 import { AuthContext } from "../../context";
 import { NavLink } from "react-router-dom";
 
 const cardImages = [
-  // { "src": "/img/RomainChauve.png", matched: false },
-  { src: "/img/IMG_4786.jpg", matched: false },
-  { src: "/img/IMG_4787.jpg", matched: false },
-  { src: "/img/IMG_4788.jpg", matched: false },
-  { src: "/img/IMG_4789.jpg", matched: false },
-  // { "src": "/img/RomainBourré.png", matched: false },
-  // { "src": "/img/RabbiRomain.png", matched: false },
-  // { "src": "/img/RomainRonpich.png", matched: false }
+  { src: "/img/asDeCoeur.png", matched: false },
+  { src: "/img/asDePique.png", matched: false },
+  { src: "/img/troisDeCoeur.png", matched: false },
+  { src: "/img/troisDePique.png", matched: false },
 ];
 
 export function RomainEasy() {
